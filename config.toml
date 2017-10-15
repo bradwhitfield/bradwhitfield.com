@@ -1,0 +1,20 @@
+baseurl = "localhost:1313/"
+languageCode = "en-us"
+title = "Brad Whitfield"
+theme = "hpstr"
+pluralizelisttitles = false
+PygmentsCodeFences = true
+Paginate = 5
+# disqusShortname = "hpstrhugo"
+
+[params]
+	subtitle = "Random things I want to write about"
+	[params.author]
+		name = "Brad Whitfield"
+		avatar = "/images/logo.png"
+		bio = "Some computer geek who won't shut up."
+		github = "bradwhitfield"
+	[params.image]
+	  feature = "/images/header.jpg"
+	  credit = "Bethany Whitfield"
+	  creditlink = "http://www.bethanywhitfield.com"

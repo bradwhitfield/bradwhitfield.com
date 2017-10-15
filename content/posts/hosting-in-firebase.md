@@ -5,6 +5,7 @@ Description = "An outline of how I built my static sites, and deployed them to G
 Tags = ["development", "static", "hosting", "gcp", "firebase", "hugo"]
 Categories = ["Development", "Cloud"]
 menu = "main"
+comments = false
 +++
 
 This is my first post while I test this, so it will be bear until I figure it out.

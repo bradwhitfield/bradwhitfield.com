@@ -5,7 +5,7 @@ theme = "hpstr"
 pluralizelisttitles = false
 PygmentsCodeFences = true
 Paginate = 5
-# disqusShortname = "hpstrhugo"
+# disqusShortname = "hpstrhugo
 
 [params]
 	subtitle = "Random things I want to write about"

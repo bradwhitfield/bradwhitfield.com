@@ -4,6 +4,7 @@ Description = "About Brad Whitfield"
 Tags = ["about", "brad", "whitfield", "personal"]
 Categories = ["about"]
 menu = "main"
+comments = false
 +++
 
 ![header](/images/about-me.jpg)

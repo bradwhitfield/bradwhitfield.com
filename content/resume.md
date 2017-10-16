@@ -4,6 +4,7 @@ Description = "Brad Whitfield's Résumé"
 Tags = ["Development", "golang"]
 Categories = ["Development", "GoLang"]
 menu = "main"
+comments = false
 +++
 
 I'm a Cloud Engineer who loves infrastructure automation, and working in a DevOps culture.

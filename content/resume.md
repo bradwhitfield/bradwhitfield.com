@@ -7,7 +7,8 @@ menu = "main"
 comments = false
 +++
 
-I'm a Cloud Engineer who loves infrastructure automation, and working in a DevOps culture.
+I'm a Cloud Engineer who loves infrastructure automation, and working in a DevOps culture. I'm a AWS Certified
+Developer - Associate, and my Solution Architect - Associate exam is scheduled.
 
 I spend most of my time helping teams make better use of services AWS provides, and help individuals understand when
 it does and doesn't make sense to use Docker for their workloads.

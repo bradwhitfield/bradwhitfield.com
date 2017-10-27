@@ -17,23 +17,25 @@ it cost almost nothing (or free depending on traffic).
 
 # Hugo and the HPSTR theme
 
-I've been some form of Operations Engineer for a while. Although I know how to maintain and
-secure a server, I also know that there isn't really a need to anymore for something simple
-like a blog. There are many good [static site generators](https://www.staticgen.com/) out there
-that make it easy to create blogs using only static HTML, CSS, and JS.
+To start, I'm a lazy person. My VPS isn't a lot of work, but it's work that I don't really
+need to do anymore since the tooling for static sites is so great. I used to use the VPS for
+more than just web hosting, but not anymore, so it's no longer worth the upkeep.
 
-Static site generators
-No need to secure and update something like wordpress or ghost
-Since everything is static files, hosting becomes very easy
+For creating content like a blog, there are lots of good static site generators. There is
+even [this site](https://www.staticgen.com/) listing them, which is provided by a static
+site hosting company (makes sense). Since I'm a bit of a golang fanboy, and since the tool
+works well, I went with [Hugo](https://gohugo.io/) and the
+[HPSTR Theme](https://dldx.github.io/hpstr-hugo-theme/).
 
-Chose hugo because I is golang fanboy
-I liked the HPSTR theme
+But this is just some boring background information. The hosting is really the point of my
+ramblings in this post.
 
 # Static Site Hosting
 
-You can now host for free or close to it, unless you site is massive, or gets a ton of traffic
+For a site that doesn't get a lot of traffic, there are several options available now
+where you can host your site for free, or really cheaply.
 
-# AWS
+## AWS
 
 AWS Annoys me, but I know my way around it
 Hosting in S3 is really cheap

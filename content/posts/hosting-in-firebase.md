@@ -60,6 +60,12 @@ firebase --serve and firebase init are pretty nice
 A ton of things to install to get it all to work
 Pretty easy to use
 
+Based on some basic metadata scraping, it looks like NGINX.
+https://firebase.googleblog.com/2016/09/http2-comes-to-firebase-hosting.html
+https://nginx.org/en/docs/http/ngx_http_v2_module.html
+It uses Let's Encrypt for certs
+You could theoretically recreate this using Google App Engine, but I have not tried.
+
 Caveat with the GCP trial pay-as-you-go stuff
 
 # The Winner is Firebase, For Now

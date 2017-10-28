@@ -37,11 +37,22 @@ where you can host your site for free, or really cheaply.
 
 ## AWS
 
-AWS Annoys me, but I know my way around it
-Hosting in S3 is really cheap
-Route 53 for DNS
+With AWS, it's really easy to [use S3 and Route 53](https://docs.aws.amazon.com/AmazonS3/latest/dev/WebsiteHosting.html)
+for hosting a static site. If you want to get fancy, you can even add CloudFront as a CDN to
+make your website even faster. It's really cheap, and to host this site at the current size and
+rate of traffic, the calculator shows that it would be pennies each month to host without CF, and
+under $0.10 a month with CF.
 
-# GCP
+Theses fees assume that you are out of the [Free Tier](https://aws.amazon.com/free/) usage. If you ran
+your site for a year on AWS, you would probably get a good idea of what it will cost you later. My site
+gets so little traffic that your bill will probably be a bit higher.
+
+I've been working in AWS for a couple of years now. I love not having to rack and wire
+servers anymore (yes I've racked servers), but the more I use AWS, the more it's
+inconsistencies annoy me. Some services are better than others (S3 being a better one), but
+I like the idea of seeing what else is out there, and if the other cloud providers are any better.
+
+## GCP
 
 Because AWS annoys me, I wanted to check out GCP.
 Better look and docs in limited experience
@@ -49,11 +60,11 @@ Better free tier
 No TLS, but you can use CloudFlare free tier to use HTTPS
 Plus $300
 
-# Azure
+## Azure
 
 https://www.microsoft.com/middleeast/azureboxes/cloud-hosting-for-a-static-website.aspx
 
-# Firebase
+## Firebase
 
 Basically GCP
 1 GB of storage - 10 GB of traffic
@@ -70,7 +81,7 @@ You could theoretically recreate this using Google App Engine, but I have not tr
 
 Caveat with the GCP trial pay-as-you-go stuff
 
-# The Winner is Firebase, For Now
+## The Winner is Firebase, For Now
 
 That's what this rev is hosted with. I have two other sites to migrate, so I may host those
 other places just to try it out.

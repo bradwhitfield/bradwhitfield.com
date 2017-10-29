@@ -54,15 +54,23 @@ I like the idea of seeing what else is out there, and if the other cloud provide
 
 ## GCP
 
-Because AWS annoys me, I wanted to check out GCP.
-Better look and docs in limited experience
-Better free tier
-No TLS, but you can use CloudFlare free tier to use HTTPS
-Plus $300
+As I mentioned previously, I wanted to check out other cloud providers because I get annoyed with
+AWS sometimes. Google Cloud Platform (GCP) has always interested me for some reason, so I used this as an
+excuse to play around with it. In my initial impression, I'm impressed. The UI is much prettier, and more
+user friendly, and so far the docs have been great. The [always free tier](https://cloud.google.com/free/)
+is better than the [AWS Offering](https://aws.amazon.com/free/) for my needs, and the $300 credit
+to use in the first year is pretty compelling. Hopefully GCP will keep impressing me as I continue to
+play around with it.
 
-## Azure
+When you look at the docs for
+[static site hosting on GCP](https://cloud.google.com/storage/docs/hosting-static-website), there is a
+red flag (almost literally) that sticks out right away - GCP does not natively support hosting over HTTPS.
+As they call out in the docs, you can use something like CloudFlare to secure your site, or you can use
+Firebase Hosting. I'm kind of a nut about securing everything, regardless of what it is. I also like the
+idea of simple management that's all in one place. For this reason, I added Firebase Hosting to the list
+of options to check out.
 
-https://www.microsoft.com/middleeast/azureboxes/cloud-hosting-for-a-static-website.aspx
+![HTTP-Something-Here]()
 
 ## Firebase
 
@@ -80,6 +88,10 @@ It uses Let's Encrypt for certs
 You could theoretically recreate this using Google App Engine, but I have not tried.
 
 Caveat with the GCP trial pay-as-you-go stuff
+
+## Azure
+
+https://www.microsoft.com/middleeast/azureboxes/cloud-hosting-for-a-static-website.aspx
 
 ## The Winner is Firebase, For Now
 

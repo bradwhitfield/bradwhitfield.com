@@ -74,6 +74,12 @@ of options to check out.
 
 ## Firebase
 
+I had previously explored firebase for very simple projects, but never really their hosting. During my
+explorations of GCP I did learn that Firebase is basically a gateway drug to GCP, so that's intruging.
+
+If you look at the [pricing page](https://firebase.google.com/pricing/), you get 1 GB of storage and
+10 GB of traffic for Hosting in the free Spark Plan; that's quite a bit for my static site needs.
+
 Basically GCP
 1 GB of storage - 10 GB of traffic
 That's a lot for static site

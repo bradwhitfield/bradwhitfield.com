@@ -75,31 +75,50 @@ of options to check out.
 ## Firebase
 
 I had previously explored firebase for very simple projects, but never really their hosting. During my
-explorations of GCP I did learn that Firebase is basically a gateway drug to GCP, so that's intruging.
+explorations of GCP I did learn that Firebase is basically a gateway drug to GCP, so that's intriguing.
 
 If you look at the [pricing page](https://firebase.google.com/pricing/), you get 1 GB of storage and
-10 GB of traffic for Hosting in the free Spark Plan; that's quite a bit for my static site needs.
+10 GB of traffic for Hosting in the free Spark Plan; that's quite a bit for my static site needs. The
+[documentation](https://firebase.google.com/docs/hosting/) makes it look straight forward too.
 
-Basically GCP
-1 GB of storage - 10 GB of traffic
-That's a lot for static site
-firebase --serve and firebase init are pretty nice
-A ton of things to install to get it all to work
-Pretty easy to use
-
-Based on some basic metadata scraping, it looks like NGINX.
-https://firebase.googleblog.com/2016/09/http2-comes-to-firebase-hosting.html
-https://nginx.org/en/docs/http/ngx_http_v2_module.html
-It uses Let's Encrypt for certs
-You could theoretically recreate this using Google App Engine, but I have not tried.
-
-Caveat with the GCP trial pay-as-you-go stuff
+There is a caveat with using Firebase. If you already have a GCP account on the email you are using
+for Firebase, it appears that have to use the pay-as-you-go plan. Still, it's relatively inexpensive
+unless you get a lot of traffic.
 
 ## Azure
 
-https://www.microsoft.com/middleeast/azureboxes/cloud-hosting-for-a-static-website.aspx
+For Azure, I didn't explore this as much. This was one of the last ones on my list, and I found that
+GCP and Firebase would both give me free hosting (for my site anyways). Although Azure is still another
+really cheap competitor, I'm incredibly stingy. If I was already Azure, I would probably explore this
+more, though. [Here are the docs](https://www.microsoft.com/middleeast/azureboxes/cloud-hosting-for-a-static-website.aspx)
+for if you want more info.
 
 ## The Winner is Firebase, For Now
 
-That's what this rev is hosted with. I have two other sites to migrate, so I may host those
-other places just to try it out.
+This version of the site is currently hosted on Firebase. So far, I like it. In practice, the tooling
+was pretty easy to use (but a lot to install), and it meets my needs. Basically my workflow is what's
+below. I do have some automation in there, but this is the gist of what happens.
+
+```bash
+hugo serve
+
+# write stuff
+
+hugo
+firebase --serve
+
+# make sure it looks good
+firebase deploy
+```
+
+After deploying, I started scraping some metadata and checking searching around a bit, and I was pretty
+happy to find that they are probably using NGINX to host the sites, the site
+[supports HTTP2](https://firebase.googleblog.com/2016/09/http2-comes-to-firebase-hosting.html), and Firebase
+hosting gets an "A" on SSL Labs. As a side note, they're using Let's Encrypt as the certificate authority.
+
+![SSL Labs Results](/images/firebase_hosting_ssl_labs.jpg)
+
+I have two more sites to migrate off of this VPS, at the time or writing, so I might explore using GCP and
+CloudFlare for one of them. For my wife's site, I'm going to migrate it to Firebase, because it will be easy
+enough for her to do on her own before I get around to automating everything. Overall, I'm happy with Firebase,
+but it's still very early days.

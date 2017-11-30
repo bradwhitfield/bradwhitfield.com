@@ -132,3 +132,13 @@ gets an "A" on SSL Labs. As a side note, they're using Let's Encrypt as the cert
 I have two more sites to migrate off of this VPS, so I might explore using GCP and CloudFlare for one
 of them. For my wife's site, I'm going to migrate it to Firebase, because it will be easy enough for
 her to do on her own before I get around to automating everything. I'll stick with it for this site.
+
+# Update
+
+Another free static site hosting option that didn't cross my mind at the time is
+[Github Pages](https://pages.github.com/). It looks pretty straight forward, and  I know several
+people that are happily using it. Firebase ties in to a lot of the tooling I want to experiment with,
+so I'm going to stick with it for now.
+
+I don't plan to update this post for any of the other cheap or free ways to do this, but so many
+people I know are using Github, so I figured it deserved a quick mention.

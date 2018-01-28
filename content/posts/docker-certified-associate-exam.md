@@ -1,7 +1,7 @@
 +++
 Title = "Docker Certified Associate Exam"
 Date = "2018-01-27T18:23:00-05:00"
-draft = true
+draft = false
 Description = "My thoughts on the Docker Certied Associate Exam (sorry, no questions from the test)."
 Tags = ["Docker", "Exam", "DCA", "Certified", "Associate"]
 Categories = ["Ops", "Docker"]
